@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+
+<div class="ui main text container segment">
+    <div class="ui huge header">Edit <%=medicine.medicinename%> </div>
+    <form class="ui form" action="/medicines/<%= medicine._id %>?_method=PATCH" method="POST">
+        <div class="field">
+            <label for="medicinename">Name</label>
+            <input type="text" name="medicinename" placeholder="Name" value="<%=medicine.medicinename%>">
+        </div>
+        <div class="field">
+            <label for="Qty">Quantity</label>
+            <input type="number" name="qty" placeholder="Quantity" value="<%=medicine.qty%>">
+        </div>
+        <div class="field">
+            <label for="Morning">Morning</label>
+            <input type="text" name="morning" placeholder="true/false" value="<%=medicine.morning%>">
+        </div>
+        <div class="field">
+            <label for="Afternoon">Afternoon</label>
+            <input type="text" name="afternoon" placeholder="true/false" value="<%=medicine.afternoon%>">
+        </div>
+        <div class="field">
+            <label for="Evening">Evening</label>
+            <input type="text" name="evening" placeholder="true/false" value="<%=medicine.night%>">
+        </div>
+             <input class="ui violet big basic button" type="submit">
+
+    </form>
+</div>
+
+<%- include("partials/footer") %>

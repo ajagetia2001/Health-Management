@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<div class="ui main text container segment">
+    <div class="ui huge header"><%=medicine.medicinename%></div>
+    <div class="ui top attached ">
+        <div class="description">
+            <p>Quantity:- <%-medicine.qty%></p>
+            <p>Morning:- <%-medicine.morning%></p>
+            <p>Afternoon:- <%-medicine.afternoon%></p>
+            <p>Night:- <%-medicine.night%></p>
+        </div>
+        <a class="ui blue inverted button" href="/medicines/<%=medicine._id%>/edit">Edit</a>
+        <form action="/medicines/<%=medicine._id%>?_method=DELETE" id="delete" method="POST">
+            <button class="ui red inverted button">Delete</button>
+        </form>
+    </div>
+</div>
+
+<%- include("partials/footer") %>

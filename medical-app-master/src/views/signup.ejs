@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @charset "utf-8";
+/* CSS Document */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 1px solid #f1f1f1;
+box-shadow: 0px 1px 10px 2px #e0e1e2;}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+	margin-bottom: 20px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+label {
+	margin-top: 50px;
+}
+
+button {
+    background-image: linear-gradient(to right, #7451a2 , #ee2e24);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+	height: 40px;
+    -moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+}
+
+button:hover {
+	box-shadow: 0px 8px 8px -5px #838384;
+}
+a {
+	text-decoration: none;
+	color:#ee2e24;
+}
+a:hover {
+    text-decoration: underline;
+	text-decoration-color: #ee2e24;
+}
+
+.container {
+    padding: 20px;
+	
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+input:hover {
+	border-color: #ee2e24;
+}
+ h1 {
+	 margin-bottom:5px;
+	 padding-bottom:0px;
+	 color: #ee2e24;
+ }
+ p {
+	 margin-top:0px;
+	 padding-top:0px;
+	 margin-bottom:40px;
+	 color:#838384;
+ }
+
+</style>
+<link rel="stylesheet" href="../public/signup.css">
+<title>Untitled Document</title>
+</head>
+
+<body style="background-color:#f7f8f9" width="728px">
+<div align="center">
+<div align="center">
+	<h1><font color="#ee2e24">Sign up</font></h1>
+	<p><font color="#838384">It's free and only takes a minute.</font></p>
+</div>
+
+<form  method="POST" action="/users" style="width:550px; background-color:white; border-radius:3%">
+
+  <div class="container" align="left" style="padding-left:60px; padding-top:30px">
+    <label for="name">User Name</label>
+    <input type="text" placeholder="Enter Username" name="name" required><br>
+    
+    <label for="email">E-mail Address</label>
+    <input type="text" placeholder="Enter Username" name="email" required>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+       <div align="center"> 
+    <button type="submit"><b>Sign Up</b></button>
+	  </div>
+  </div>
+	<div align="center" style="padding-bottom:20px">
+		By clicking the Sign Up button, you agree our <br>
+		<a href="#"><font color="#ee2e24">Terms & Conditions</font></a>, and <a href="#"><font color="#ee2e24">Privacy Policy.</font></a>
+		
+	</div>
+	
+</form>
+</div>
+
+</body>
+</html>
